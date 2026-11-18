@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Class Portal - Assignment</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+
+  body{
+    min-height:100vh;
+    padding-top:60px;
+    background-size: cover;
+    background-position: center;
+    animation: changeBg 12s infinite;
+  }
+  @keyframes changeBg{
+    0%{ background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200'); }
+    33%{ background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200'); }
+    66%{ background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200'); }
+    100%{ background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200'); }
+  }
+
+  .top-links{text-align:center;margin-bottom:20px}
+  .top-links a{color:white;display:block;font-size:18px;text-shadow:1px 1px 3px black}
+
+  .card{
+    background:#4be07a;
+    width:320px;
+    margin:0 auto;
+    padding:25px 20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+  .logo-icon{
+    width:60px;height:60px;
+    background:#222;color:white;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 8px;
+    font-size:30px;
+  }
+  .school-name{font-size:11px;font-weight:bold;color:#333;letter-spacing:1px}
+  h2{margin:18px 0 15px;font-size:18px}
+  label{display:block;font-size:12px;color:white;margin:12px 0 5px;text-align:left}
+
+  input{
+    width:100%;padding:12px 15px;
+    border:2px solid transparent;
+    border-radius:20px;outline:none;
+    font-size:13px;
+    background:white;
+    transition: 0.3s;
+  }
+  input:focus{
+    border-color:#0a8a3a;
+    background:#eafff0;
+    box-shadow: 0 0 0 3px #ffff00, 0 0 10px #0a8a3a;
+  }
+  input:hover{
+    border-color:#ffff00;
+  }
+
+  .login-btn{
+    width:100%;padding:12px;margin-top:18px;
+    background:#0a8a3a;color:white;border:none;
+    border-radius:20px;font-weight:bold;cursor:pointer;
+  }
+  .login-btn:hover{ background:#00662a; }
+  .forgot{font-size:12px;color:white;margin-top:12px}
+  .forgot a{color:#0056b3;text-decoration:none}
+  .demo-note{font-size:11px;margin-top:15px;color:#222;background:yellow;padding:5px;border-radius:5px}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+  <div class="school-name">MY CLASS PORTAL</div>
+  <div class="demo-note">DEMO FOR CLASS ASSIGNMENT ONLY - NOT JAMB</div>
+
+  <h2>Login to your account</h2>
+
+  <label>Email Address</label>
+  <input type="email" placeholder="Email Address">
+
+  <label>Password</label>
+  <input type="password" placeholder="Password">
+
+  <button class="login-btn">Login</button>
+
+  <p class="forgot">Forgot your Password? <a href="#">Click here to reset it.</a></p>
+</div>
+
+</body>
+</html>
